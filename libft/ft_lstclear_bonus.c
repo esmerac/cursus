@@ -52,3 +52,5 @@ int	main(void)
 		printf("la lista está vacía\n");
 	return (0);
 } */
+
+

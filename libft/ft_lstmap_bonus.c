@@ -6,11 +6,11 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 18:14:56 by emmera            #+#    #+#             */
-/*   Updated: 2024/03/04 18:15:10 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/06 15:35:55 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+/*t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	
 }*/
