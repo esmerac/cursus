@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 16:16:03 by emmera            #+#    #+#             */
-/*   Updated: 2024/02/29 19:17:36 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/11 17:55:37 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ void	ft_putstr_fd(char *s, int fd)
 	}
 }
 /* #include <fcntl.h>
-// cc -Wall -Wextra -Werror ft_putstr_fd.c ft_putchar_fd.c  && ./a.out && rm a.out && rm test.txt
+// cc -Wall -Wextra -Werror ft_putstr_fd.c ft_putchar_fd.c  
+&& ./a.out && rm a.out && rm test.txt
 int	main()
 {
 	int	fd;

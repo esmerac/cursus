@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 17:52:28 by emmera            #+#    #+#             */
-/*   Updated: 2024/02/22 17:17:23 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/11 16:46:43 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	if (!dst && !src)
 		return (NULL);
-	d = (unsigned char *) dst;
-	s = (unsigned char *) src;
+	d = (unsigned char *)dst;
+	s = (unsigned char *)src;
 	if (s < d && d < s + len)
 		while (len--)
 			d[len] = s[len];
@@ -33,7 +33,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 #include <stdio.h>
 #include <string.h>
 
-int main()
+int	main(void)
 {
 	char s[] = {65, 66, 67, 68, 69, 0, 45};
 	char s0[] = { 0,  0,  0,  0,  0,  0, 0};

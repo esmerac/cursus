@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 18:13:58 by emmera            #+#    #+#             */
-/*   Updated: 2024/03/07 17:45:45 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/11 16:38:50 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,15 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
+	t_list	*temp;
+
 	if (!lst || !f)
 		return ;
-	while (lst)
+	temp = lst;
+	while (temp)
 	{
-		f (lst->content);
-		lst = lst->next;
+		f(temp->content);
+		temp = temp->next;
 	}
 }
 /* 

@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 14:46:49 by emmera            #+#    #+#             */
-/*   Updated: 2024/02/28 17:20:46 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/11 17:53:10 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,9 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	return (0);
 }
-/*int	main()
+/* int	main()
 {
+		// if (size != 0 && count * size > SIZE_MAX)
 	char *str;
 	char *str2;
 
@@ -58,5 +59,6 @@ void	*ft_calloc(size_t count, size_t size)
 		printf("%p\n", str);
 		printf("%p\n", str2);
 	}
+	printf("el overflow %lu",(unsigned long) (SIZE_MAX + 2));
 	return (0);
-}*/
+} */
