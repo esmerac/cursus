@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 17:52:28 by emmera            #+#    #+#             */
-/*   Updated: 2024/03/11 16:46:43 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/13 21:13:54 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,26 +22,33 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	d = (unsigned char *)dst;
 	s = (unsigned char *)src;
 	if (s < d && d < s + len)
+	{
 		while (len--)
 			d[len] = s[len];
+	}
 	else
+	{
 		while (len--)
-			*(d++) = *(s++);
+		{
+			*d = *s;
+			d++;
+			s++;
+		}
+	}
 	return (dst);
 }
-/*
-#include <stdio.h>
+
+/*#include <stdio.h>
 #include <string.h>
 
-int	main(void)
+int main()
 {
 	char s[] = {65, 66, 67, 68, 69, 0, 45};
-	char s0[] = { 0,  0,  0,  0,  0,  0, 0};
-	char sCpy[] = {65, 66, 67, 68, 69, 0, 45};
-	char sResult[] = {67, 68, 67, 68, 69, 0, 45};
-	char sResult2[] = {67, 67, 68, 68, 69, 0, 45};
+	//char s2[] = {67, 68, 67, 68, 69, 0, 45};
+	char s_copy[] = { 0,  0,  0,  0,  0,  0, 0};
 
-memmove(s,);
+	ft_memmove (s_copy, s, strlen(s));
 
-	printf("%d", ft_memmove (destination, source, sizeof(char) * 20));
-}*/
+	printf("%s\n", s);
+	printf("%s\n", s_copy);
+} */

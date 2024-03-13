@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 18:00:58 by emmera            #+#    #+#             */
-/*   Updated: 2024/02/28 19:54:40 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/13 21:39:12 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,14 +44,13 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ft_strlcpy(str, s + start, len +1);
 	return (str);
 }
-
-/*
-#include <stdio.h>
-int		main(int argc, const char *argv[])
+/* #include <stdio.h>
+int		main(void)
 {
 	char	str[] = "lorem ipsum dolor sit amet";
-	char	*strsub;
-	int		arg;
+	unsigned int	start = 2;
+	size_t	i = 0;
 
-	printf("%s\n", ft_substr(str, 0, 10));
-}*/
+	printf("%s\n", ft_substr(str, start, i));
+	return(0);
+} */
