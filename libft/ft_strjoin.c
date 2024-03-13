@@ -6,18 +6,17 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 18:00:43 by emmera            #+#    #+#             */
-/*   Updated: 2024/03/06 18:14:41 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/12 16:12:06 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
+#include "libft.h"
 
-/*char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*ptr;
 	size_t	total_len;
 
-	if 
 	total_len = ft_strlen(s1) + ft_strlen(s2) + 1;
 	ptr = (char *)malloc(total_len * sizeof(char));
 	if (!ptr)
@@ -26,4 +25,4 @@
 	ft_strlcat(ptr, s2, total_len);
 	ptr[total_len - 1] = '\0';
 	return (ptr);
-}*/
+}

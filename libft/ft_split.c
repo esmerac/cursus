@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 17:55:48 by emmera            #+#    #+#             */
-/*   Updated: 2024/03/11 16:44:36 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/13 16:28:58 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static size_t	count_words(char const *s, char delimiter)
 	{
 		if (*s == delimiter)
 			s++;
-		if (*s != delimiter)
+		else if (*s != delimiter)
 		{
 			count++;
 			while (*s && *s != delimiter)
@@ -61,7 +61,7 @@ static int	fill_lst(char **dst, char const *src, char d)
 	{
 		if (src[wlen] == d)
 			wlen++;
-		if (src[wlen] != d)
+		if (src[wlen] != d && src[wlen] != 0)
 		{
 			src = src + wlen;
 			wlen = count_letters(src, d);
@@ -108,8 +108,12 @@ char	**ft_split(char const *s, char c)
 
 int	main()
 {
+	char cont[6] = "hola ";
+	count_words(cont, ' ');
+	printf("%d\n", count_words ((char const *)cont, ' '));
+	
 	char *str = "I love cats, I love every kind of cats.";
-	char **split_array = ft_split(str, ',');
+	char **split_array = ft_split("hello!zzzzzzzz", ' ');
 	print_array(split_array);
 
 	char **split_array_2 = ft_split(str, ' ');
