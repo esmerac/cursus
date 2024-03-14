@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 12:59:42 by emmera            #+#    #+#             */
-/*   Updated: 2024/02/12 15:17:01 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/14 12:33:16 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,12 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
+/* int	 main(void)
+{
+	char s[] = "hola";
+	printf("%s\n", s);
+	size_t	n = 1;
+	ft_bzero(s, n);
+	printf("%s\n", s);
+	return (0);
+} */

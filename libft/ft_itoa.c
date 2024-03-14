@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 17:48:36 by emmera            #+#    #+#             */
-/*   Updated: 2024/03/06 18:16:52 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/14 16:57:44 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,3 +57,9 @@ char	*ft_itoa(int nb)
 	}
 	return (str);
 }
+/* int	main()
+{
+	int	s = 123;
+	printf("%s\n", ft_itoa(s));
+	return (0);
+} */

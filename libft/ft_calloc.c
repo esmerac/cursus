@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 14:46:49 by emmera            #+#    #+#             */
-/*   Updated: 2024/03/11 17:53:10 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/14 12:44:36 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,47 +18,32 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
 
-	if (size != 0 && count > SIZE_MAX / size)
-		return (NULL);
 	ptr = malloc(count * size);
 	if (ptr)
 	{
 		ft_memset(ptr, 0, count * size);
 		return (ptr);
 	}
-	return (0);
+	return (NULL);
 }
 /* int	main()
 {
-		// if (size != 0 && count * size > SIZE_MAX)
-	char *str;
-	char *str2;
+	char	*str = ft_calloc(56, sizeof(char));
+	int		success = 1;
+	size_t	i = 0;
 
+	if (str)
 	{
-		str = ft_calloc(SIZE_MAX, SIZE_MAX);
-		str2 = calloc(SIZE_MAX, SIZE_MAX);
-		printf("%p\n", str);
-		printf("%p\n", str2);
-	}
-	{
-		str = ft_calloc(SIZE_MAX - 1, SIZE_MAX - 1);
-		str2 = calloc(SIZE_MAX - 1, SIZE_MAX - 1);
-		printf("%p\n", str);
-		printf("%p\n", str2);
-	}
-	printf("%llu\n", (SIZE_MAX - 1) * (SIZE_MAX - 1));
-	{
-		str = ft_calloc(SIZE_MAX - 1, 1);
-		str2 = calloc(SIZE_MAX - 1, 1);
-		printf("%p\n", str);
-		printf("%p\n", str2);
-	}
-	{
-		str = ft_calloc(SIZE_MAX, 1);
-		str2 = calloc(SIZE_MAX, 1);
-		printf("%p\n", str);
-		printf("%p\n", str2);
-	}
-	printf("el overflow %lu",(unsigned long) (SIZE_MAX + 2));
+		while (i < 56)
+		{
+			if (str[i] != 0)
+				success = 0;
+			i++;
+		}
+		if (success)
+			printf("Calloc worked \n");
+		else
+			printf("Calloc failed \n");
+		free (str);
 	return (0);
 } */

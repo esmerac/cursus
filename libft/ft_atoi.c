@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/25 16:40:20 by emmera            #+#    #+#             */
-/*   Updated: 2024/02/28 19:51:45 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/14 16:51:28 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,11 @@ int	ft_atoi(const char *str)
 		nb = -nb;
 	return (nb);
 }
-/*#include <stdio.h>
+/* #include <stdio.h>
 int	main()
+
 {
-	printf("%i", ft_atoi(" -1234ab567"));
+	printf("%i\n", ft_atoi(" -1234ab567"));
+	printf("%i", atoi(" -1234ab567"));
 	return (0);
-}*/
+} */
