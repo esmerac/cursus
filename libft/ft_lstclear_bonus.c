@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 18:13:24 by emmera            #+#    #+#             */
-/*   Updated: 2024/03/11 16:40:19 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/18 19:47:18 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,8 @@ int	main(void)
 	printf("%s\n", ft_lstlast(lst)->content);
 	ft_lstadd_back(&lst, new3);
 	printf("%s\n", ft_lstlast(lst)->content);
-	ft_lstclear(&lst, ft_free);
-	if (lst == NULL)
+	ft_lstclear(&new2, ft_free);
+	if (new2 == NULL)
 		printf("la lista está vacía\n");
 	return (0);
 } */

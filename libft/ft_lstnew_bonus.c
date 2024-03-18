@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 16:55:34 by emmera            #+#    #+#             */
-/*   Updated: 2024/03/11 17:54:15 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/18 15:05:36 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,12 @@ t_list	*ft_lstnew(void *content)
 	list_pointer->next = NULL;
 	return (list_pointer);
 }
+/* int	main(void)
+{
+	t_list	*s1;
+
+	s1 = ft_lstnew("hola");
+
+	printf("%s\n", (char *)(s1->content));
+	return(0);
+} */
