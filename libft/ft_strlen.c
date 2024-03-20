@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 18:01:40 by emmera            #+#    #+#             */
-/*   Updated: 2024/02/22 18:40:02 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/19 17:30:31 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ size_t	ft_strlen(char const *str)
 	}
 	return (strlen);
 }
-/*
+
 #include <stdio.h>
 #include <string.h>
 
@@ -54,4 +54,3 @@ int main() {
 
     return 0;
 }
-*/

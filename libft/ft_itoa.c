@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 17:48:36 by emmera            #+#    #+#             */
-/*   Updated: 2024/03/14 16:57:44 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/19 16:58:34 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char	*ft_itoa(int nb)
 	str = (char *) malloc(i + 1);
 	if (!str)
 		return (NULL);
-	str[i--] = '\0';
+	str[i] = '\0';
 	if (n == 0)
 		str[0] = '0';
 	if (n < 0)
@@ -49,6 +49,7 @@ char	*ft_itoa(int nb)
 		str[0] = '-';
 		n *= -1;
 	}
+	i--;
 	while (n > 0)
 	{
 		str[i] = '0' + (n % 10);

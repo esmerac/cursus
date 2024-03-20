@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 18:00:58 by emmera            #+#    #+#             */
-/*   Updated: 2024/03/13 21:39:12 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/19 15:35:13 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*str;
 	size_t	s_len;
 
-	if (len == 0)
+	if (!s || len == 0)
 		return (onlynull());
 	s_len = ft_strlen((char *)s);
 	if (start > s_len)
@@ -47,7 +47,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 /* #include <stdio.h>
 int		main(void)
 {
-	char	str[] = "lorem ipsum dolor sit amet";
+	char	str[] = "";
 	unsigned int	start = 2;
 	size_t	i = 0;
 

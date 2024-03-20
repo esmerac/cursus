@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/25 16:40:10 by emmera            #+#    #+#             */
-/*   Updated: 2024/02/29 13:59:44 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/19 15:16:43 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 
 	i = 0;
 	x = 0;
+	if ((!s1 || !s2) && len == 0)
+		return (0);
 	if (s2[x] == '\0')
 		return ((char *) s1);
 	while (s1[i] != '\0' && i < len)

@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 17:01:08 by emmera            #+#    #+#             */
-/*   Updated: 2024/03/18 20:31:10 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/18 20:51:56 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	del(lst->content);
 	free(lst);
 }
-void	printlist(void *lst)
+/*void	printlist(void *lst)
 {
 	t_list	*aux_ptr;
 	aux_ptr = lst;
@@ -29,7 +29,7 @@ void	printlist(void *lst)
 		aux_ptr = aux_ptr->next;
 	}
 }
-/* int	main(void)
+int	main(void)
 {
 	t_list	*new;
 	t_list	*new1;

@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 18:13:24 by emmera            #+#    #+#             */
-/*   Updated: 2024/03/18 19:47:18 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/19 16:37:16 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*next;
 
+	if (!lst || !del)
+		return ;
 	while (*lst)
 	{
 		next = (*lst)->next;

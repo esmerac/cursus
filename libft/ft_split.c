@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 17:55:48 by emmera            #+#    #+#             */
-/*   Updated: 2024/03/14 20:20:07 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/19 16:14:34 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ static int	fill_lst(char **dst, char const *src, char d)
 	{
 		if (src[wlen] == d)
 			wlen++;
-		if (src[wlen] != d && src[wlen] != 0)
+		else if (src[wlen] != d)
 		{
 			src = src + wlen;
 			wlen = count_letters(src, d);
@@ -84,6 +84,8 @@ char	**ft_split(char const *s, char c)
 	char	**lst;
 	size_t	split_number;
 
+	if (!s)
+		return (0);
 	split_number = count_words(s, c) + 1;
 	lst = (char **)ft_calloc(split_number, sizeof(char *));
 	if (!lst || !s)

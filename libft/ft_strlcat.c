@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 17:54:15 by emmera            #+#    #+#             */
-/*   Updated: 2024/02/28 19:52:17 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/19 15:15:56 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	int		i;
 
 	i = 0;
+	if ((!dst || !src) && dstsize == 0)
+		return (0);
 	dst_len = ft_strlen(dst);
 	while (dst[i])
 		i++;

@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 16:16:03 by emmera            #+#    #+#             */
-/*   Updated: 2024/03/11 17:55:37 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/19 16:18:15 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	while (*s != '\0')
 	{
 		ft_putchar_fd(*s, fd);

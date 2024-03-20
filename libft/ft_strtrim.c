@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 18:00:22 by emmera            #+#    #+#             */
-/*   Updated: 2024/02/28 19:54:06 by emmera           ###   ########.fr       */
+/*   Updated: 2024/03/19 16:07:47 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	i = 0;
 	dst = 0;
+	if (!s1 || !set)
+		return (0);
 	if (s1[0] == '\0')
 		return (ft_calloc(1, 1));
 	if (set)
