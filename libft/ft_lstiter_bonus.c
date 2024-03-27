@@ -49,5 +49,6 @@ int	main(void)
 	ft_lstiter(lst, f);
 	printf("%s\n", lst->content);
 	printf("%s\n", lst->next->content);
+	//printf("%s\n", lst->next->next->content);
 	return (0);
 } */

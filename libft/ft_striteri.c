@@ -26,7 +26,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		count++;
 	}
 }
-/*#include <stdio.h>
+/* #include <stdio.h>
 void f(unsigned int index, char *c)
 {
     *c = ft_toupper(*c);
@@ -34,8 +34,8 @@ void f(unsigned int index, char *c)
 
 int main()
 {
-    char s[] = "hola mundo";
+    char s[] = "me gustan los gatos";
     ft_striteri(s, f);
     printf("%s\n", s); // Imprime "HOLA MUNDO"
     return 0;
-}*/
+} */

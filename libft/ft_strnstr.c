@@ -37,3 +37,14 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 	}
 	return (0);
 }
+
+/* int main() 
+{
+    const char haystack[] = "Hola gente, me gustan los gatitos";
+    const char needle[] = "gente";
+    size_t len = 50;
+
+    char *resultado = ft_strnstr(haystack, needle, len);
+	printf("%s\n", resultado);
+    return 0;
+} */

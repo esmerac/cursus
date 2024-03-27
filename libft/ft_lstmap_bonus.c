@@ -36,23 +36,23 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
-/*#include <stdio.h>
+/* #include <stdio.h>
 #include "libft.h"
 
-void	f(void *content)
+void	printlist(void *content)
 {
 	printf("%s\n", (char *)content);
 }
 
-void	f2(unsigned int i, char	*s)
+void	upper(unsigned int i, char	*s)
 {
 	if(ft_isalpha((int)*s))
 		*s -= 32;
 }
 
-void	*f3(void *content)
+void	*upperall(void *content)
 {
-	ft_striteri((char *)content,f2);
+	ft_striteri((char *)content,upper);
 	return (content);
 }
 void	del(void *content)
@@ -77,12 +77,12 @@ int	main(void)
 	ft_lstadd_front(&list, node2);
 	ft_lstadd_back(&list, node3);
 	printf("Size: %d\n", ft_lstsize(list));
-	ft_lstiter(list, f);
+	ft_lstiter(list, printlist);
 	//ft_lstdelone(node, &del);
 	printf("DESPUES DEL DELONE\n");
-	ft_lstiter(list, f);
+	ft_lstiter(list, printlist);
 	printf("LSTMAP:\n");
-	list2 = ft_lstmap(list,f3, del);
-	ft_lstiter(list2, f);
+	list2 = ft_lstmap(list,upperall, del);
+	ft_lstiter(list2, printlist);
 	return (0);
-}*/
+} */
