@@ -47,9 +47,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 /* #include <stdio.h>
 int		main(void)
 {
-	char	str[] = "";
+	char	str[] = "gatitos";
 	unsigned int	start = 2;
-	size_t	i = 0;
+	size_t	i = 3;
 
 	printf("%s\n", ft_substr(str, start, i));
 	return(0);
