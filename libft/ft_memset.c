@@ -35,7 +35,7 @@ void	*ft_memset(void *a, int c, size_t len)
 	int	a = 'g';
 	size_t	n = 3;
 	ft_memset(s, a, n);
-	printf("%s", s);
-	free (s);
+	printf("%s\n", s);
+	
 	return (0);
 } */

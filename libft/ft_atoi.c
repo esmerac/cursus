@@ -14,11 +14,11 @@
 
 int	ft_atoi(const char *str)
 {
-	int	i;
+//	int	i;
 	int	signo;
 	int	nb;
 
-	i = 0;
+//	i = 0;
 	signo = 0;
 	nb = 0;
 	while (*str == ' ' || *str == '\f' || *str == '\n' || *str == '\r'

@@ -16,7 +16,7 @@ char	*ft_strrchr(const char *str, int c)
 {
 	int	i;
 
-	i = ft_strlen((char *)str);
+	i = ft_strlen(str);
 	while (i >= 0)
 	{
 		if (str[i] == (char)c)
@@ -25,3 +25,10 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	return (NULL);
 }
+/* int main()
+{
+	const char *s1 = "me fascinan los felinos";
+	int letra = 'f';
+	printf("%s\n", ft_strrchr(s1, letra));
+	return(0);
+} */

@@ -27,3 +27,12 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 	return (0);
 }
+/* int main(void)
+{
+	char const s1[] = "me gustan los gatitos";
+	char const s2[] = "me gustan ";
+
+	printf("%d\n", ft_strncmp(s1, s2, 10));
+	printf("%d\n", strncmp(s1, s2, 10));
+	return(0);
+} */

@@ -36,3 +36,18 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	ptr[i] = '\0';
 	return (ptr);
 }
+
+/* char my_upper(unsigned int i, char c)
+{
+	printf("%d\n", i);
+	return (ft_toupper(c));
+}
+
+int main(void)
+{
+	char const *p1 = "me gustan los gatitos";
+	char *resultado = ft_strmapi(p1, my_upper);
+	printf("%s\n", resultado);
+    free(resultado);
+	return(0);
+} */

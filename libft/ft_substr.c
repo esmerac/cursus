@@ -36,8 +36,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (onlynull());
 	if (len > s_len - start)
 		len = s_len - start;
-	if (!s)
-		return (0);
+	// if (!s)
+	// 	return (0);
 	str = (char *)malloc((len +1) * sizeof(char));
 	if (!str)
 		return (0);
@@ -47,9 +47,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 /* #include <stdio.h>
 int		main(void)
 {
-	char	str[] = "";
+	char	str[] = "gatitos";
 	unsigned int	start = 2;
-	size_t	i = 0;
+	size_t	i = 3;
 
 	printf("%s\n", ft_substr(str, start, i));
 	return(0);

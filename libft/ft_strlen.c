@@ -25,7 +25,7 @@ size_t	ft_strlen(char const *str)
 	return (strlen);
 }
 
-#include <stdio.h>
+/* #include <stdio.h>
 #include <string.h>
 
 // Prototipo de la función ft_strlen
@@ -53,4 +53,4 @@ int main() {
     }
 
     return 0;
-}
+} */

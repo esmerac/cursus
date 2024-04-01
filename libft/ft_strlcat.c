@@ -28,3 +28,31 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	ft_strlcpy(dst + i, src, dstsize - i);
 	return (dst_len + ft_strlen((char *)src));
 }
+/* int main() {
+    char dst[50] = "Hola ";
+    char src[] = "gatito";
+    size_t dstsize;
+    size_t result;
+
+    // Prueba 1: Concatenar una cadena completa
+	dstsize = 20;
+    result = ft_strlcat(dst, src, dstsize);
+    printf("1Resultado: %s\nLongitud total: %zu\n", dst, result);
+
+    // Prueba 2: Concatenar con un tamaño de destino más pequeño que la longitud de la cadena de origen
+    dstsize = 5; // Ahora solo queremos copiar los primeros 5 caracteres
+    result = ft_strlcat(dst, src, dstsize);
+    printf("2Resultado: %s\nLongitud total: %zu\n", dst, result);
+
+    // Prueba 3: Concatenar con un tamaño de destino igual a la longitud de la cadena de origen
+    dstsize = strlen(dst);
+    result = ft_strlcat(dst, src, dstsize);
+    printf("3Resultado: %s\nLongitud total: %zu\n", dst, result);
+
+    // Prueba 4: Concatenar con un tamaño de destino de 0
+    dstsize = 0;
+    result = ft_strlcat(dst, src, dstsize);
+    printf("4Resultado: %s\nLongitud total: %zu\n", dst, result);
+
+    return 0;
+} */

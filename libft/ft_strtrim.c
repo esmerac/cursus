@@ -40,3 +40,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	return (dst);
 }
+/* int main(void)
+{
+	char const p1[] = "me gustan los gatitos";
+	char const borrar[] = "me gustan";
+	printf("%s\n", ft_strtrim(p1, borrar));
+	return(0);
+} */

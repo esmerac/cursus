@@ -31,3 +31,37 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[i] = '\0';
 	return (len);
 }
+/* int main()
+{
+	const char src[] = "hola";
+	char dst[] = "p";
+	size_t p = 10;
+	printf("%s\n %zu\n", dst, ft_strlcpy(dst, src, p));
+	return (0);
+
+    char src[] = "Hola Mundo";
+    char dst[20]; // Buffer suficientemente grande para almacenar la cadena de origen
+    size_t dstsize = sizeof(dst);
+    size_t copied_len;
+
+    // Prueba 1: Copiar una cadena completa
+    copied_len = ft_strlcpy(dst, src, dstsize);
+    printf("Copiado: %s\nLongitud copiada: %zu\nLongitud total: %zu\n", dst, copied_len, strlen(src));
+
+    // Prueba 2: Copiar una cadena con un tamaño de destino más pequeño
+    dstsize = 5; // Ahora solo queremos copiar los primeros 5 caracteres
+    copied_len = ft_strlcpy(dst, src, dstsize);
+    printf("Copiado: %s\nLongitud copiada: %zu\nLongitud total: %zu\n", dst, copied_len, strlen(src));
+
+    // Prueba 3: Copiar una cadena con un tamaño de destino igual a la longitud de la cadena de origen
+    dstsize = strlen(src);
+    copied_len = ft_strlcpy(dst, src, dstsize);
+    printf("Copiado: %s\nLongitud copiada: %zu\nLongitud total: %zu\n", dst, copied_len, strlen(src));
+
+    // Prueba 4: Copiar una cadena con un tamaño de destino de 0
+    dstsize = 0;
+    copied_len = ft_strlcpy(dst, src, dstsize);
+    printf("Copiado: %s\nLongitud copiada: %zu\nLongitud total: %zu\n", dst, copied_len, strlen(src));
+
+    return 0;
+} */
