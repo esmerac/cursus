@@ -2,6 +2,7 @@ NAME = libftprintf.a
 CC = gcc
 CFLAGS 	= 	-Wall -Wextra -Werror
 SOURCE = puts.c \
+		ft_printf.c \
 
 OBJECTS = $(SOURCE:.c=.o)
 
