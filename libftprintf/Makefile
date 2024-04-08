@@ -1,8 +1,7 @@
 NAME = libftprintf.a
 CC = gcc
 CFLAGS 	= 	-Wall -Wextra -Werror
-SOURCE = ft_isascii.c \
-		ft_printf.c \
+SOURCE = puts.c \
 
 OBJECTS = $(SOURCE:.c=.o)
 

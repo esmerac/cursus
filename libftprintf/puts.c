@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/05 18:47:20 by emmera            #+#    #+#             */
-/*   Updated: 2024/04/05 21:09:01 by emmera           ###   ########.fr       */
+/*   Updated: 2024/04/08 15:29:20 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_putchar(char c)
 	return (write(1, &c, 1));
 }
 
-/* int	ft_putnbr(int n)
+int	ft_putnbr(int n)
 {
 	int	nb1;
 	int	divnb1;
@@ -46,28 +46,26 @@ int	ft_putchar(char c)
 		if (nb1 < 0)
 		{
 			nb1 = -nb1;
-			result += ft_putchar("-");
+			result += ft_putchar('-');
 		}
 		divnb1 = (nb1 / 10);
 		if (nb1 >= 10)
 		{
-			result += ft_putnbr_fd(divnb1, 1);
+			result += ft_putnbr(divnb1);
 		}
 		restnb1 = ((nb1 % 10) + '0');
-		result += ft_putchar(&restnb1);
+		result += ft_putchar((char)&restnb1);
 	}
 	return (result);
-} */
+}
 
 int	ft_putnbr_base(char *base, size_t n)
 {
-	int	result;
+	int		result;
 	size_t	len;
 
-	//nb1 = (long)n;
 	result = 0;
 	len = ft_strlen(base);
-	//conseguir la longitud de la base
 	if (n < 0)
 	{
 		n = -n;
@@ -78,11 +76,10 @@ int	ft_putnbr_base(char *base, size_t n)
 		result += ft_putnbr_base(base, (n / len));
 	}
 	result += ft_putchar(base[n % len]);
-
 	return (result);
 }
 
-/* int	ft_putstr(char *s)
+int	ft_putstr(char *s)
 {
 	int	result;
 
@@ -95,12 +92,12 @@ int	ft_putnbr_base(char *base, size_t n)
 		s++;
 	}
 	return (result);
-} */
+}
 
-int	main(void)
+/* int	main(void)
 {
 	char *frase = "0123456789ABCDEF";
 	int result = ft_putnbr_base(frase, 42);
 	//printf("%i\n", result);
 	return (0);
-}
+} */
