@@ -17,6 +17,7 @@
 # include <stdarg.h>
 # include <unistd.h>
 
+int	ft_printf(const char *str, ...);
 size_t	ft_strlen(char const *str);
 int		ft_putchar(char c);
 int		ft_putnbr(int n);
