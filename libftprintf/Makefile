@@ -6,7 +6,7 @@
 #    By: emmera <emmera@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/12 12:57:14 by emmera            #+#    #+#              #
-#    Updated: 2024/04/12 12:57:18 by emmera           ###   ########.fr        #
+#    Updated: 2024/04/15 16:13:01 by emmera           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libftprintf.a
 CC = gcc
 CFLAGS 	= 	-Wall -Wextra -Werror
 SOURCE = puts.c \
-		ft_printf.c \
+		ft_printf.c
 
 OBJECTS = $(SOURCE:.c=.o)
 
@@ -26,7 +26,7 @@ $(NAME): $(OBJECTS)
 
 
 clean:
-	@rm -f $(OBJECTS) $(BOBJECTS)
+	@rm -f $(OBJECTS)
 
 fclean: clean
 	@rm -f $(NAME)
@@ -34,4 +34,4 @@ fclean: clean
 re: fclean all
 
 .DEFAULT_GOAL := all
-.PHONY: all bonus clean fclean re
+.PHONY: all clean fclean re

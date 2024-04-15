@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 20:05:08 by emmera            #+#    #+#             */
-/*   Updated: 2024/04/15 15:20:30 by emmera           ###   ########.fr       */
+/*   Updated: 2024/04/15 16:16:05 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,10 @@ int	ft_printf(char const *str, ...)
 	return (result);
 }
 
-/* int main() 
+/*
+#include <stdio.h>
+
+int main()
 {
 	char *cat;
 

@@ -6,18 +6,15 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/05 18:19:36 by emmera            #+#    #+#             */
-/*   Updated: 2024/04/15 12:35:47 by emmera           ###   ########.fr       */
+/*   Updated: 2024/04/15 16:15:30 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include <stdlib.h>
 # include <stdarg.h>
 # include <unistd.h>
-# include <stdio.h>
-# include <limits.h>
 
 int		ft_printf(const char *str, ...);
 size_t	ft_strlen(char const *str);
