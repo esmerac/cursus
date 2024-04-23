@@ -6,7 +6,7 @@
 /*   By: emmera <emmera@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/02 20:05:08 by emmera            #+#    #+#             */
-/*   Updated: 2024/04/15 16:16:05 by emmera           ###   ########.fr       */
+/*   Updated: 2024/04/23 16:59:44 by emmera           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ int	ft_printf(char const *str, ...)
 	return (result);
 }
 
-/*
+/* 
 #include <stdio.h>
 
 int main()
@@ -108,13 +108,14 @@ int main()
 	printf("| len %d\n", printf("%p", (void *)-14523));
 	ft_printf("| len %d\n", ft_printf("%p", (void *)-14523));
 
-	//printf("| len %d\n", printf("%"));
+	//printf("| len %d\n", printf("%%%"));
 	ft_printf("| len %d\n", ft_printf("%%%"));
 
-	printf("| len %d\n", printf("multiple test
-	 %i %s %x %p", 10, "cat", 122, cat));
-	ft_printf("| len %d\n", ft_printf("mu
-	ltiple test %i %s %x %p", 10, "cat", 122, cat));
+	printf("| len %d\n", printf("multiple test 
+	%i %s %x %p", 10, "cat", 122, cat));
+	ft_printf("| len %d\n", ft_printf("multiple test 
+	%i %s %x %p", 10, "cat", 122, cat));
 
 	return (0);
-} */
+} 
+ */
