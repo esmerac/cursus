@@ -1,18 +1,2 @@
-Eres la reina del pop
-Una diva sin nombre un montón de ilusion
-Eres facturas y alcohol
-Una foto borrosa
-Una flor sin olor
-Piensa en qué vas a gastar
-Todo ese dinero que vas a ganar
-No sabes cuanto te admiro
-Te aplaudo te miro y te escucho tambien
-Nunca olvides quién te ayudó
-Quién estuvo contigo, quién te enseñó
-No dejes que nadie al pasar
-Te mire a los ojos tú debes mandar
-Eres la reina del pop
-Una diva sin nombre un montón de ilusion
-Eres facturas y alcohol
-Una foto borrosa
-Una flor sin olor
+Welcome to the file!
+This is the first line.
